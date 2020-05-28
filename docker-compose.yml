@@ -8,3 +8,4 @@ services:
             - ./:/work
         environment:
             - HOME=/work
+        command: bash -c "g++ -lncurses puyo.cpp && ./a.out"
