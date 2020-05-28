@@ -1,0 +1,10 @@
+version: "3"
+services:
+    puyo:
+        image: gcc:latest
+        working_dir: /work
+        tty: true
+        volumes:
+            - ./:/work
+        environment:
+            - HOME=/work
